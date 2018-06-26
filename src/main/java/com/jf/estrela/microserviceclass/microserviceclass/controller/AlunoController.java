@@ -21,7 +21,7 @@ import com.jf.estrela.microserviceclass.microserviceclass.service.AlunoService;
 
 @RestController
 
-@RequestMapping(path = "/api")
+@RequestMapping(path = "/aluno")
 public class AlunoController {
 	
 	
@@ -29,38 +29,37 @@ public class AlunoController {
 	private AlunoService alunoService;
 	
 	
-	@GetMapping(value="/aluno/{id}")
+	@GetMapping(value="{id}")
 	public ResponseEntity<Aluno> getAluno(@PathVariable Long id) {
 		return  ResponseEntity.ok().body(alunoService.getById(id));
 	}
 	
-	@GetMapping(value="/aluno/{nome}")
+	@GetMapping(value="/nome/{nome}")
 	public ResponseEntity<List<Aluno>> getAlunoByName(@PathVariable String name) {
 		return  ResponseEntity.ok().body(alunoService.findAllByName(name));
 	}
 	
-	@GetMapping(value="/aluno/{mes}")
+	@GetMapping(value="/mes/{mes}")
 	public ResponseEntity<List<Aluno>> getAlunoByMesNascimento(@PathVariable Integer mes) {
 		return  ResponseEntity.ok().body(alunoService.findByMesNascimento(mes));
 	}
 	
 	@GetMapping(value="/listar")
-//	@Secured("ROLE_USER")
 	public ResponseEntity<List<Aluno> >findAll() {
 		return ResponseEntity.ok().body(alunoService.findAll());
 	}
 	
-	@PutMapping(value="/atualizar")
+	@PutMapping()
 	public ResponseEntity<Aluno> atualizar(@RequestBody Aluno aluno) {
 		return ResponseEntity.ok().body(alunoService.upadate(aluno));	
 	}
 	
-	@PostMapping(value="/save")
+	@PostMapping()
 	public ResponseEntity<Aluno> save(@RequestBody Aluno aluno) {
 		return  ResponseEntity.ok().body(alunoService.save(aluno));
 	}
 	
-	@DeleteMapping(value="/excluir/{id}")
+	@DeleteMapping(value="/{id}")
 	public ResponseEntity<Aluno> excluir(@PathVariable Aluno aluno) {
 		alunoService.delete(aluno);
 		return new ResponseEntity<>(HttpStatus.OK);
