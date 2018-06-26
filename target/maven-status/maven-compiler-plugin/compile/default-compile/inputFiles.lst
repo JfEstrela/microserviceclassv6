@@ -1,0 +1,8 @@
+/home/fernando/java/projetos/microserviceclassV6/src/main/java/com/jf/estrela/microserviceclass/microserviceclass/MicroserviceclassApplication.java
+/home/fernando/java/projetos/microserviceclassV6/src/main/java/com/jf/estrela/microserviceclass/microserviceclass/service/AlunoService.java
+/home/fernando/java/projetos/microserviceclassV6/src/main/java/com/jf/estrela/microserviceclass/microserviceclass/repository/DisciplinaRepository.java
+/home/fernando/java/projetos/microserviceclassV6/src/main/java/com/jf/estrela/microserviceclass/microserviceclass/controller/AlunoController.java
+/home/fernando/java/projetos/microserviceclassV6/src/main/java/com/jf/estrela/microserviceclass/microserviceclass/repository/AlunoRepository.java
+/home/fernando/java/projetos/microserviceclassV6/src/main/java/com/jf/estrela/microserviceclass/microserviceclass/conf/SecurityConfiguration.java
+/home/fernando/java/projetos/microserviceclassV6/src/main/java/com/jf/estrela/microserviceclass/microserviceclass/entity/Disciplina.java
+/home/fernando/java/projetos/microserviceclassV6/src/main/java/com/jf/estrela/microserviceclass/microserviceclass/entity/Aluno.java

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: microserviceclass
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: fernando
+Implementation-Vendor-Id: com.jf.estrela.microserviceclass
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/microserviceclassV6
+Created-By: Maven Integration for Eclipse
+
